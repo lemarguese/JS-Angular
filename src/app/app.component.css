@@ -1,0 +1,245 @@
+#background {
+    z-index: 1;
+    right: 37%;
+    position: absolute;
+    display: flex;
+    width: 32%;
+}
+#texts {
+    z-index: 2;
+    left: 39.2%;
+    width: 15.2%;
+    height: 13.4%;
+    position: absolute;
+    display: flex;
+    font-family: Helvetica, monospace;
+    background-color: black;
+    top: 14.8%;
+    color: white;
+    font-size: 400%;
+}
+#text {
+    position: absolute;
+    z-index: 2;
+    left: 40.8%;
+    top: 3%;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    position: absolute;
+    cursor: pointer;
+    text-align: justify;
+    z-index: 2;
+    width: 4%;
+    height: 8%;
+    display: flex;
+    font-size: xx-large;
+    font-family: Helvetica;
+}
+#one {
+    left: 39.2%;
+    top: 45%;
+}
+#two {
+    left: 43.15%;
+    top: 45%;
+}
+#three {
+    left: 47.15%;
+    top: 45%;
+}
+#four {
+    left: 39.2%;
+    top: 53%;
+}
+#five {
+    left: 43.15%;
+    top: 53%;
+}
+#six {
+    left: 47.15%;
+    top: 53%;
+}
+#seven {
+    left: 39.2%;
+    top: 61%;
+}
+#eight {
+    left: 43.15%;
+    top: 61%;
+}
+#nine {
+    left: 47.15%;
+    top: 61%;
+}
+#zero {
+    position: absolute;
+    z-index: 2;
+    width: 7.9%;
+    top: 68.75%;
+    height: 7%;
+    left: 39.25%;
+    font-size: xx-large;
+    font-family: Helvetica;
+}
+#sum {
+    position: absolute;
+    font-size: xx-large;
+    font-family: Helvetica;
+    cursor: pointer;
+    z-index: 2;
+    width: 3.85%;
+    height: 15.7%;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    display: flex;
+    left: 51.15%;
+    top: 53%;
+}
+#equal {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    width: 7.9%;
+    font-size: xx-large;
+    font-family: Helvetica;
+    top: 68.75%;
+    height: 7%;
+    left: 47.15%;
+}
+#ce {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    font-size: x-large;
+    font-family: Helvetica;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    width: 3.8%;
+    height: 8%;
+    text-align: center;
+    display: flex;
+    left: 51.15%;
+    top: 45%;
+}
+#multi {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 4.1%;
+    height: 8%;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    text-align: center;
+    font-size: xx-large;
+    font-family: Helvetica;
+    display: flex;
+    left: 47.1%;
+    top: 37.2%;
+}
+#mins {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 4%;
+    height: 8%;
+    text-align: center;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    font-size: xx-large;
+    font-family: Helvetica;
+    display: flex;
+    left: 39.2%;
+    top: 37.2%;
+}
+#divi {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 4%;
+    height: 8%;
+    text-align: center;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    font-size: xx-large;
+    font-family: Helvetica;
+    display: flex;
+    left: 43.15%;
+    top: 37.2%;
+}
+#pow {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    width: 3.8%;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    height: 8%;
+    font-size: x-large;
+    font-family: Helvetica;
+    text-align: center;
+    display: flex;
+    left: 51.2%;
+    top: 37.2%;
+}
+#sqrt {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    font-size: x-large;
+    font-family: Helvetica;
+    width: 4%;
+    height: 8%;
+    text-align: center;
+    display: flex;
+    left: 39.2%;
+    top: 29.2%;
+}
+#remind {
+    position: absolute;
+    cursor: pointer;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    font-size: xx-large;
+    font-family: Helvetica;
+    z-index: 2;
+    width: 4%;
+    height: 8%;
+    text-align: center;
+    display: flex;
+    left: 43.15%;
+    top: 29.2%;
+}
+#c {
+    position: absolute;
+    cursor: pointer;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    z-index: 2;
+    width: 4%;
+    font-size: xx-large;
+    font-family: Helvetica;
+    height: 8%;
+    text-align: center;
+    display: flex;
+    left: 47.15%;
+    top: 29.2%;
+}
+#onediv {
+    position: absolute;
+    border-width: 1px;
+    background-color:rgb(201, 164, 2);
+    cursor: pointer;
+    z-index: 2;
+    width: 3.8%;
+    height: 8%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Helvetica;
+    display: flex;
+    left: 51.15%;
+    top: 29.2%;
+}
