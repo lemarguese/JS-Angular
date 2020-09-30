@@ -1,0 +1,128 @@
+<mat-vertical-stepper linear>
+  <mat-step>
+  <ng-template matStepLabel>Question 1</ng-template>
+    <mat-label>When was the Borodino battle?<br><br></mat-label>
+    <div>
+      <div class = 'first' *ngIf = '!ok'>  
+        <input type = "radio" class = 'first' name = 'ans2' (click) = "enableForRadio($event)" value = "1768">1768
+        <input type = "radio" class = 'first' name = 'ans2' (click) = "enableForRadio($event)" value = "1812">1812
+        <input type = "radio" class = 'first' name = 'ans2' (click) = "enableForRadio($event)" value = "1900">1900
+        <input type = "radio" class = 'first' name = 'ans2' (click) = "enableForRadio($event)" value = "1891">1891    
+      </div>
+      <button mat-button matStepperNext (click) = "disable('first')">Next</button>
+    </div>
+    </mat-step>
+<mat-step>
+    <ng-template matStepLabel>Question 2</ng-template>
+      <p>Famous artist Leonardo Da Vinci,<br> 
+        who was draw "Mona Lisa" <br>
+        draw "Mona Lisa" for over 20 years. <br>
+        What took so long for Leonardo to draw? <br>
+      <div *ngIf = '!ok'>
+        <input type = "radio" class = 'second' name = 'ans2' (click) = "enableForRadio($event)" value = "ears">Ears
+        <input type = "radio" class = 'second' name = 'ans2' (click) = "enableForRadio($event)" value = "body">Body
+        <input type = "radio" class = 'second' name = 'ans2' (click) = "enableForRadio($event)" value = "back">Background
+        <input type = "radio" class = 'second' name = 'ans2' (click) = "enableForRadio($event)" value = "lips">Lips    
+      </div>
+      <div>
+      <button mat-button matStepperNext (click) = "disable('second')">Next</button>
+    </div>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Question 3</ng-template>
+    <mat-label>C2H2(OH)2 as known as ___?<br><br></mat-label>
+      <div *ngIf = '!ok'>
+        <input class = 'third' name = 'ans3' type = "radio" (click) = "enableForRadio($event)" value = "methan">Methan
+        <input class = 'third' name = 'ans3' type = "radio" (click) = "enableForRadio($event)" value = "etil">Ethyl liquid
+        <input class = 'third' name = 'ans3' type = "radio" (click) = "enableForRadio($event)" value = "gluten">Gluten
+        <input class = 'third' name = 'ans3' type = "radio" (click) = "enableForRadio($event)"value = "sugar">Sugarosa    
+      </div>
+      <button mat-button matStepperNext (click) = "disable('third')">Next</button>
+</mat-step>
+<mat-step [stepControl]="fourthFormGroup">
+  <form [formGroup]="fourthFormGroup">
+  <ng-template matStepLabel>Question 4</ng-template>
+    <mat-label> ______ was the conqueror of the Eurasian steppes in 444 A.D. <br></mat-label>
+    <mat-form-field>
+      <div *ngIf = '!ok'>  
+        <input matInput id = 'fourth' placeholder = "Name of conqueror" (click) = "enableForText($event)" formControlName="fourthCtrl" required>    
+      </div>
+    </mat-form-field>
+    <button mat-button matStepperNext (click) = "disableforInput('fourth')">Next</button>
+  </form>
+</mat-step>
+<mat-step [stepControl]="fifthFormGroup">
+  <form [formGroup]="fifthFormGroup">
+  <ng-template matStepLabel>Question 5</ng-template>
+    <mat-label> In ____ Chernobyl Nuclear Station was destroyed. <br></mat-label>
+    <mat-form-field>  
+      <div *ngIf = '!ok'>
+        <input matInput id = 'fifth' placeholder = "Year: " (click) = "enableForText($event)" formControlName="fifthCtrl" required>    
+      </div>
+    </mat-form-field>
+    <button mat-button matStepperNext (click) = "disableforInput('fifth')">Next</button>
+  </form>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Question 6</ng-template>
+    <mat-label> Horses sleep while on feet: <br></mat-label>
+    <div *ngIf = '!ok'>
+      <input class = 'sixth' name = 'ans3' type = "radio" (click) = "enableForRadio($event)" value = "true">True <br>
+      <input class = 'sixth' name = 'ans3' type = "radio" (click) = "enableForRadio($event)" value = "false">False <br>
+    </div>
+    <button mat-button matStepperNext (click) = "disable('sixth')">Next</button>
+</mat-step>
+<mat-step [stepControl]="seventhFormGroup">
+  <form [formGroup]="seventhFormGroup">
+  <ng-template matStepLabel>Question 7</ng-template>
+    <mat-label> Formula for power: <br></mat-label>
+    <mat-form-field>  
+      <div *ngIf = '!ok'>
+        <input matInput id = 'seventh' placeholder = "Formula: " (click) = "enableForText($event)" formControlName="seventhCtrl" required>    
+      </div>
+    </mat-form-field>
+      <button mat-button matStepperNext (click) = "disableforInput('seventh')">Next</button>
+  </form>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Question 8</ng-template>
+    <mat-label> Sergeant level in army is known by this chevron: >>> <br></mat-label>
+    <div *ngIf = '!ok'>  
+      <input class = 'eighth' type = "radio" name = 'ans3' (click) = "enableForRadio($event)" value = "yes">Yes <br>
+      <input class = 'eighth' type = "radio" name = 'ans3' (click) = "enableForRadio($event)" value = "no">No <br>
+    </div>
+    <button mat-button matStepperNext (click) = "disable('eighth')">Next</button>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Question 9</ng-template>
+    <mat-label> Men are more than women in the world <br></mat-label>
+    <div *ngIf = '!ok'>
+      <input class = 'nineth' type = "radio" name = 'ans3' (click) = "enableForRadio($event)" value = "true">True <br>
+      <input class = 'nineth' type = "radio" name = 'ans3' (click) = "enableForRadio($event)" value = "false">False <br>
+    </div>
+    <button mat-button matStepperNext (click) = "disable('nineth')">Next</button>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Question 10</ng-template>
+    <mat-label> Thank you for your time! Was it interesting? <br></mat-label>
+    <div *ngIf = '!ok'>
+      <input type = "radio" class = 'tenth' name = 'ans3' (click) = "enableForRadio($event)" value = "yes">Yes! <br>
+      <input type = "radio" class = 'tenth' name = 'ans3' (click) = "enableForRadio($event)" value = "yes">Awesome! <br>
+    </div>
+    <button mat-button matStepperNext (click) = "getResult()">Next</button>
+</mat-step>
+</mat-vertical-stepper>
+<h1 id = "res">Your total score is: {{count}}/10</h1>
+<h1 id = "time" *ngIf = "!ok">{{timeLeft}}</h1>
+<h1 id = 'timeisup' *ngIf = 'ok'>Time is up! Congratulations!</h1>
+<h1 id = 'faq'>For each question you have 10 seconds to choose, <br>
+but you also can answer quick <br> 
+and save your seconds for the next.</h1>
+<h1 id = 'quest'>What do you choose: With timer or without?<br>
+If with timer, click the button<br>
+Else, leave it.</h1>
+  <button id = 'start' (click) = "startTimer()">Start</button>
+<h1 id = 'note'>[Important note!]: <br>
+Reach the fourth question as <br>
+fast as possible (in timer variant). <br> 
+If you miss this, you missed at all!</h1>

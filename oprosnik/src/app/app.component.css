@@ -1,0 +1,42 @@
+#res {
+    position: absolute;
+    z-index: 3;
+    left:30%;
+    top: 100%;
+}
+#time {
+    position: absolute;
+    z-index: 3;
+    left:40%;
+    top: 5%;
+}
+#timeisup {
+    position: absolute;
+    z-index: 3;
+    left: 40%;
+    top: 15%;
+}
+#faq {
+    position: absolute;
+    z-index: 3;
+    left:60%;
+    top: 35%;
+}
+#start {
+    position: absolute;
+    z-index: 3;
+    left: 60%;
+    top: 10%;
+}
+#quest {
+    position: absolute;
+    z-index: 3;
+    left: 60%;
+    top: 15%;
+}
+#note {
+    position: absolute;
+    z-index: 3;
+    left: 60%;
+    top: 55%;
+}
