@@ -1,0 +1,26 @@
+
+<div id="back">
+    <nav>
+        <img src = 'https://www.linkedout.fr/static/img/linkedout_logo_white.png' routerLink = '/main'>
+    </nav>
+    <nav><button mat-button (click) = 'logout()' routerLink = '/login' id = 'logout'>Logout</button></nav>
+</div>
+
+<div id = 'cardsback'>
+    <h1 id = 'user'>Users</h1>
+    <div id = 'cards' *ngFor = 'let user of users'>
+        <h1 id = 'names'>{{user.name}}</h1>
+        <div id = 'cardback'>
+            <p> <mat-icon>account_circle</mat-icon> {{user.username}} </p>
+            <p> <mat-icon>email</mat-icon> {{user.email}} </p>
+            <p> <mat-icon>contact_phone</mat-icon> {{user.phone}} </p>
+            <p> <mat-icon>location_city</mat-icon> {{user.address.city}} </p>
+            <p> <mat-icon>account_balance</mat-icon> {{user.company.name}} </p>
+        </div>
+    </div>
+</div>
+<div id = 'api'>
+    <p>Privacy</p>
+    <p>API</p>
+    <p>Policy</p>
+</div>

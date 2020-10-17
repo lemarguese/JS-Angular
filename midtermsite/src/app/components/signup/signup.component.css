@@ -1,0 +1,64 @@
+#back {
+    left: 38.5%;
+    top: 67.5%;
+    z-index: 2;
+    position: absolute;
+}
+
+#back img {
+    width: 30%;
+    height: 15%;
+}
+
+.signup form {
+    position: absolute;
+    z-index: 1;
+    left: 32.5%;
+    width: 30%;
+    top: 20%;
+    height: 60%;
+    border-color: rgb(80, 162, 255);
+    background-color: rgb(117, 181, 255);
+    border-radius: 1px;
+    border-style: solid;
+}
+.signup form #user {
+    position: relative;
+    top: 20%;
+}
+
+#reg {
+    position: absolute;
+    top: 23%;
+    z-index: 2;
+    font-family: 'Segoe UI';
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    left: 40.8%;
+}
+
+.signup form input {
+    position: relative;
+    left: 2.5%;
+    border-radius: 5px;
+    height: 10%;
+    font-family: 'Segoe UI';
+    font-size: large;
+    width: 87.5%;
+    padding-left: 5%;
+    border-color: gainsboro;
+    border-style: solid;    
+}
+#sign {
+    position: relative;
+    left: 40%;
+    top: 32.5%;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: rgb(157, 203, 255);
+    background-color: rgb(113, 143, 180);
+}
+.signup form #password {
+    top: 30%;
+}

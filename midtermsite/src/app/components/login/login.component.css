@@ -1,0 +1,58 @@
+#back {
+    left: 7%;
+    width: 90%;
+    display: flex;
+    height: 95%;
+    bottom: 30%;
+    position: absolute;
+}
+#signin {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    left: 36%;
+    top: 36%;
+    border-color: rgb(139, 139, 139);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: Helvetica;
+    width: 30%;
+    height: 40%;
+}
+#signin input {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    left: 50%;
+    width: 130%;
+    text-align: center;
+    height: 20%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(238, 238, 238, 0.74);
+    top: 15%;
+}
+#login {
+    position: absolute;
+    display: flex;
+    top: 80%;
+    left: 20%;
+    border-radius: 1px;
+    border-color: seagreen;
+    background-color:silver;
+    width: 25%;
+    padding-left: 7.5%;
+    text-align: center;
+}
+#signin #signup {
+    position: absolute;
+    display: flex;
+    top: 80%;
+    left: 60%;
+    border-radius: 1px;
+    border-color: seagreen;
+    background-color:silver;
+    width: 25%;
+    text-align: center;
+}

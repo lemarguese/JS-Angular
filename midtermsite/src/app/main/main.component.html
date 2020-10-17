@@ -1,0 +1,114 @@
+
+<div id = 'background'>
+  <nav><h1 id = 'site' routerLink = '/main'>LinkedOut</h1></nav>
+  <nav><button mat-button (click) = 'logout()' routerLink = '/login' id = 'logout'>Logout</button></nav>
+</div>
+  <div id = 'main'>
+    <h1>Recent publications</h1>
+  </div>
+
+  <div id="list">
+    <nav>
+      <h1 id="posts" routerLink = '/posts'><mat-icon> list_alt </mat-icon> Posts</h1>
+      <h1 routerLink = '/users'><mat-icon> contacts </mat-icon> Users</h1>
+      <h1 id="imess" routerLink = '/im'><mat-icon> forum </mat-icon> Messages</h1>
+      <h1 id="albums" routerLink = '/albums'><mat-icon> perm_media </mat-icon> Albums</h1>
+      <h1 id="photos" routerLink = '/photos'><mat-icon> aspect_ratio </mat-icon> Photos</h1>
+      <h1 id="about" routerLink = '/about'><mat-icon> announcement </mat-icon> About Us</h1>
+      <h1 id="profile" routerLink = '/myprofile'><mat-icon> perm_identity </mat-icon> My Profile</h1>
+    </nav>
+  </div>
+
+  <div id = 'whatishappen'>
+      <input contenteditable = "true" placeholder="Share with your news!" id = 'publish' [(ngModel)] = 'post'>
+    <div id = 'ico'>
+      <mat-icon>gif</mat-icon>
+      <mat-icon> insert_photo</mat-icon>
+      <mat-icon>tag_faces</mat-icon>
+    </div>
+    <button mat-button id = 'butpub' (click) = 'publish()'>Publish</button>
+    <div *ngIf = 'isPublished' id = 'kartochka'>
+      <div *ngIf = '!comment'>
+        <div id = 'newp'>{{newPost}}</div>
+        <div id = 'timestamp'>{{date | date: "dd-hh-mm-ss"}}</div>
+        <button mat-button id = 'postcomment' (click) = 'postcommentShow()'>Comments</button>
+      </div>
+      <div *ngIf = 'comment'>
+        <li *ngFor = 'let comment of newComments' id = 'newComments'>
+          {{comment}}
+        </li>
+        <input matInput placeholder= "Write your comment there" [(ngModel)] = 'newComment' id = 'writecomment'>
+        <button mat-button (click) = 'publishComment()' id = 'pubbutton'>Publish comment</button>
+        <button mat-button (click) = 'return()' id = 'return'><mat-icon>keyboard_backspace</mat-icon></button>
+      </div>
+    </div>
+  </div>
+
+
+<div #glav id="glav">
+  <div *ngFor = 'let post of posts.slice(0, 3)'>
+    <div id = "card">
+      <ul id="box">
+        <li><mat-card-title id = 'titli'> <strong>Title: </strong>{{post.title}}</mat-card-title>
+        <div *ngIf = '!show'>
+          <mat-card-content #content id = 'content'>
+            "{{post.body}}"
+          </mat-card-content>
+        <div id = 'icons'>
+          <button mat-icon-button>
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>share</mat-icon>
+          </button>
+        </div>
+        <button mat-button id = 'comment' (click) = 'show = true'>Show comment</button>
+        </div>
+        </li>
+      </ul>
+      </div>
+</div>
+
+<div id = 'icon' *ngIf = 'show'>
+  <img src = 'https://www.linkedout.fr/static/img/linkedout_logo_white.png'>
+</div>
+
+<div id = 'botton' *ngIf = 'show'>
+  <h1>LinkedOut, 2020</h1>
+</div>
+
+
+<ul id = 'policies'>
+  <li>Policy</li>
+  <li>Privacy</li>
+  <li>API</li>
+</ul>
+
+<ul id = 'social'>
+  <li>Facebook</li>
+  <li>Instagram</li>
+  <li>Twitter</li>
+  </ul>
+
+<div *ngIf = 'show' id = 'glavcom'>
+  <div *ngFor = 'let comment of comments.slice(0, 3)' id = 'com'>
+    <strong id = 'commentpub'>{{comment.email}} quotes: </strong>
+      <em>"{{comment.body}}"</em>
+      <button mat-button (click) = 'show = false' id = 'postshow'>Show post</button>
+  </div>
+</div>
+
+<div id = 'ava' *ngIf = '!show'>
+  <div *ngFor = 'let photo of photos.slice(0, 3)' id = 'phot'>
+    <img [src] = 'photo.thumbnailUrl' id = 'avatar'>
+  </div>
+</div>
+
+
+<div id = 'users' *ngIf = '!show'>
+  <div *ngFor = 'let user of users.slice(0, 3)' id = 'use'>
+      <h1>{{user.username}}</h1>
+      <p>name: {{user.name}}</p>
+      <p>email: {{user.email}}</p>
+  </div>
+</div>

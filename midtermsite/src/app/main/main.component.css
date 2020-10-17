@@ -1,0 +1,302 @@
+#background {
+    width: 100%;
+    height: 15%;   
+    box-shadow: rgba(0, 0, 0, 0.5);
+    background-color: rgb(45, 106, 167);
+}
+
+input:focus, input:active, input:visited {
+    border:none;
+    outline: none;
+}
+
+#list h1:hover {
+    cursor: pointer;
+    color: rgb(52, 114, 177);
+}
+
+#list h1:focus, #list h1:visited, #list h1:active {
+    border: none;
+    outline: none;
+}
+
+#site {
+    position: absolute;
+    left: 41.5%;
+    top: 2.5%;
+    background-color: white;
+    width: 15%;
+    height: 7.5%;
+    font-weight: bold;
+    border: solid 5px none;
+    border-radius: 5px;
+    padding-top: 0.5%;
+    font-size: xx-large;
+    padding-left: 2.5%;
+    padding-top: 1%;
+    color: rgb(109, 170, 231);
+    font-family: 'Segoe UI';
+}
+#main {
+    margin-left: 30%;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    border: solid rgb(204, 204, 204) 2px;
+}
+#main h1 {
+    margin-left: 30%;
+    font-family: Georgia;
+    font-size: x-large;
+    margin-top: 5%; 
+}
+#list {
+    position: absolute;
+    top: 22.5%;
+    left: 5%;
+    width: 30%;
+    height: 100%;
+}
+#list h1 {
+    color: rgb(109, 170, 231);
+    transition: 0.5s linear;
+}
+#whatishappen {
+    position: absolute;
+    left: 30.2%;
+    top: 30%;
+    background-color: white;
+    width: 40%;
+    border-top: solid rgb(204, 204, 204) 2px;
+    border-bottom: solid rgb(204, 204, 204) 2px;
+    height: 15%;
+}
+#publish {
+    position: absolute;
+    width: 90%;
+    top: 15%;
+    left: 2.5%;
+    /* overflow-wrap: break-word;
+    overflow-y: auto; */
+    border: none;
+    height: 40%;
+    padding-left: 20px;
+    font-size: large;
+}
+#ico {
+    position: relative;
+    top: 60%;
+    color: rgb(109, 170, 231);
+    left: 5%;
+}
+#butpub {
+    position: relative;
+    left: 80%;
+    background-color: rgb(70, 138, 206);
+    color:white;
+    margin-top: 4.5%;
+}
+#glav {
+    position: absolute;
+    background-color: rgb(52, 114, 177);
+    width: 100%;
+    height: 133.5%;
+}
+#card {
+    position: relative;
+    max-width: 40%;
+    padding-top: 0.5%;
+    padding-right: 2.5%;
+    left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    margin-top: 1%;
+    /* padding-left: 5%; */
+    border-radius: 5px;
+    background-color: white;
+}
+#titli {
+    font-size: large;
+    font-family: Georgia;
+    font-weight: lighter;
+}
+li {
+    list-style-type: none;
+}
+#icons {
+    color: rgb(109, 170, 231);
+    position: relative;
+    left: 87.5%;
+}
+#comment {
+    position: relative;
+    left: 77.5%;
+}
+#glavcom {
+    position: absolute;
+    /* display: table-column; */
+    max-width: 45%;
+    top: 2.5%;
+    left: 42.5%;
+}
+
+#botton {
+    position: relative;
+    top: 23%;
+    left: 43%;
+}
+#botton h1 {
+    font-family: 'Segoe UI';
+    color: white;
+    font-size: medium;
+}
+
+#icon {
+    position: relative;
+    left: 17.5%;
+    margin-top: 5%;
+}
+#icon img {
+    width: 65%;
+}
+
+#com {
+    position: relative;
+    left: 15%;
+}
+#commentpub {
+    font-family: Georgia, monospace;
+    font-style: italic;
+    color: white;
+}
+em {
+    color: white;
+}
+#ava {
+    position: absolute;
+    left: 50%;
+    top: 2.5%; 
+    z-index: 2;
+}
+#avatar {
+    margin-top: 22.5%;
+    border-radius: 50%;
+}
+#users {
+    position: absolute;
+    top: -2.5%;
+    left: 57.5%;
+    z-index: 1;
+}
+#use {
+    display: grid;
+    margin-top: 52.5%;
+    border-radius: 30%;
+    padding-left: 50%;
+    padding-right: 100%;
+    background-color: white;
+    width: 100%;
+    height: 2.5%;
+}
+#use h1 {
+    font-family: 'Segoe UI';
+    color: rgb(36, 68, 100);
+}
+#use p {
+    color: rgb(36, 68, 100);
+    font-family: Times;
+}
+#policies {
+    margin-top: 5%;
+    border-top: solid 2px rgb(36, 68, 100);
+    column-count: 3;
+    padding-top: 1%;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+#policies li {
+    margin-left: 30%;
+    font-family: 'Segoe UI';
+    font-size: large;
+    color: white;
+}
+#social {
+    font-family: 'Segoe UI';
+    column-count: 3;
+    margin-left: 14%;
+    color: white;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+#kartochka {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 7.5%;
+    height: 400%;
+    background-color: white;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.75);
+}
+#newp {
+    position: relative;
+    float: left;
+    max-width: 60%;
+    margin-top: 15%;
+    font-family: 'Segoe UI';
+    left: 20%;
+    color:black;
+    font-size: large;
+}
+#timestamp {
+    position: absolute;
+    left: 72.5%;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    font-size: medium;
+}
+#postcomment {
+    position: absolute;
+    left: 65%;
+    top: 86%;
+    background-color: rgb(109, 170, 231);
+    color: white;
+}
+#newComments {
+    position: relative;
+    top: 5%;
+    padding-right: 10%;
+    margin-top: 2.5%;
+    left: 20%;
+}
+#writecomment {
+    position: absolute;
+    left: 7.5%;
+    max-width: 50%;
+    font-family: 'Segoe UI';
+    font-size: medium;
+    top: 86.5%;
+}
+#pubbutton {
+    position: absolute;
+    left: 62.5%;
+    top: 85%;
+    background-color: rgb(109, 170, 231);
+    color: white;
+}
+#logout {
+    position: relative;
+    left: 80%;
+    margin-top: 2%;
+    background-color: rgb(109, 170, 231);
+    color: white;
+}
+#return {
+    position: absolute;
+    left: 3%;
+    top: 3.5%;
+    background-color: rgb(109, 170, 231);
+    color: white;
+}
