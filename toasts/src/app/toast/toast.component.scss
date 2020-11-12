@@ -1,0 +1,33 @@
+.fail {
+    position: relative;
+    width: 250px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: rgba($color: #ff5050, $alpha: 1.0);
+}
+.success {
+    position: relative;
+    width: 250px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: rgba($color: #4aff68, $alpha: 1.0);
+}
+
+#title {
+    position: relative;
+}
+#content {
+    bottom: 20px;
+    position: relative;
+}
+
+#iks {
+    position: absolute;
+    text-align: center;
+    left: 86.5%;
+    min-width: 35px;
+    padding: 0 0 0 0;
+    bottom: 51.5%;
+    background-color: rgba(255, 0, 0, 0.733);
+}
+// background-color: rgba($color: #4aff68, $alpha: 1.0);

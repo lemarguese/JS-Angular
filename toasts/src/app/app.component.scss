@@ -1,0 +1,58 @@
+#vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 7.5px;
+}
+#horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#vertical mat-radio-button, #horizontal mat-radio-button {
+    margin-right: 7.5px;
+    margin-bottom: 10px;
+}
+#toggles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#toggles mat-slide-toggle {
+    margin-right: 5px;
+}
+#inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#color mat-radio-button {
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+#inputs input {
+    height: 36px;
+    width: 225px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-family: 'Segoe UI';
+    font-size: medium;
+}
+mat-slider {
+    position: absolute;
+    justify-content: center;
+    left: 30%;
+}
+button {
+    position: absolute;
+    left: 60%;
+    background-color: rgb(59, 194, 212);
+}
