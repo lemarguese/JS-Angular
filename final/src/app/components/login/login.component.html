@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="layout">
+        <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+        <h1> Login | Book.kz </h1>
+    </div>
+    <div class="wrapperbox">
+        <h1> Login </h1>
+        <input placeholder="Username" [formControl] = 'username' required>
+        <input type = 'password' placeholder="Password" [formControl] = 'password' required> 
+        <button mat-raised-button color = 'warn' (click) = 'login()'> Login </button>
+        <button mat-raised-button color = 'primary' (click) = 'redirect()'> Register </button>
+    </div>
+</div>
+<div *ngIf = 'loading' class = 'spinner'>
+    <mat-spinner></mat-spinner>
+</div>
+    

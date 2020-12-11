@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="layout">
+        <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+        <h1> Registration | Book.kz </h1>
+    </div>
+    <div class="wrapperbox">
+        <h1> Registration </h1>
+        <input placeholder="Username" [formControl] = 'username' required>
+        <input placeholder="Gmail"> 
+        <input type = 'password' placeholder="Password" [formControl] = 'password' required> 
+        <button mat-raised-button color = 'primary' (click) = 'register()'> Register </button>
+    </div>
+</div>

@@ -1,0 +1,189 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.layout {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    flex-direction: row;
+    height: 15%;
+    color: white;
+    opacity: 0.5;
+}
+.layout img {
+    width: 7.5%;
+    height: 100%;
+    flex-shrink: 1;
+    margin-left: 25px;
+}
+.layout h1 {
+    text-align: center;
+    margin-top: 25px;
+    flex-shrink: 1;
+    font-family: 'Segoe UI';
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+.layout p {
+    flex-shrink: 1;
+    margin-top: 25px;
+    font-family: 'Segoe UI';
+    font-size: xx-large;
+    font-weight: bold;
+}
+.sidenav {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba($color: #000000, $alpha: 0.5);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+}
+.sidenav img {
+    width: 30%;
+    margin-left: 100px;
+}
+.sidenav h1 {
+    text-align: center;
+    color: rgb(0, 15, 99);
+    margin-left: 10px;
+    font-size: 2.5vw;
+    font-weight: bolder;
+}
+.sidenav a {
+    margin-top: 5px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 145, 0);
+    height: 15%;
+}
+.sidenav a:hover {
+    background-color: rgb(139, 80, 2);
+    transition: linear 1s;
+    cursor: pointer;
+}
+.sidenav mat-icon {
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 4vw;
+    margin-right: 60px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.sidenav a p {
+    color: rgb(0, 15, 99);
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+.sidenav #copyright {
+    background-color: white;
+    padding-top: 40px;
+    padding-right: 15px;
+}
+.sidenav #copyright h1 {
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 1.25vw;
+    color: rgb(0, 15, 99);
+}
+.books {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 80%;
+}
+.books #filter {
+    width: 30%;
+    height: 80%;
+    background-color: blue;
+}
+.books #card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+    margin-top: 20px;
+    width: 25%;
+    height: 70%;
+    background-color: white;
+    color: black;
+}
+#card div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+}
+#card #cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+#card #cart button {
+    margin-top: 25px;
+    margin-right: 10px;
+}
+#card #cart mat-icon {
+    color: rgb(255, 145, 0);
+    opacity: 0.5;
+    margin-right: 30px;
+    font-size: 3vw;
+}
+#card div div {
+    display: flex;
+    flex-direction: column;
+}
+#card div h1 {
+    font-family: 'Segoe UI';
+    font-size: 1.25vw;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#card img {
+    background-color: red;
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 80%;
+}
+#card p {
+    font-family: 'Segoe UI';
+    font-size: 0.8vw;
+    font-style: italic;
+    margin-right: 12.5px;
+    text-align: end;
+    margin-top: 7.5px;
+}
+.layout .logout {
+    margin: auto;
+    margin-right: 100px;
+    width: 10%;
+    height: 50%;
+}
+#filter {
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    height: 50%;
+    border-radius: 10px;
+}
+#filter div {
+    width: 100%;
+    height: 90%;
+    background-image: url(https://s.f.kz/media/b/1607593234_content.jpg);
+}

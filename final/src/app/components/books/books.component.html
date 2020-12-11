@@ -1,0 +1,38 @@
+<mat-drawer-container class="wrapper">
+    <mat-drawer #drawer mode="over" class = "sidenav">
+        <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+        <h1>Book.kz</h1>
+        <a routerLink = '/main'><mat-icon>home</mat-icon> <p> Main </p></a>
+        <a routerLink = '/profile'><mat-icon>supervised_user_circle</mat-icon> <p> Profile </p></a>
+        <a routerLink = '/cart'><mat-icon>shopping_cart</mat-icon> <p> Cart </p></a>
+        <a routerLink = '/about'><mat-icon>info</mat-icon> <p> About us </p></a>
+        <div id = 'copyright'><h1>Copyright, Book.kz, 2020. </h1></div>
+    </mat-drawer>
+    <div>
+        <div class="layout">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                <mat-icon>subject</mat-icon>
+            </button>
+            <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+            <h1> Book categories | Book.kz </h1>
+           <button class = 'logout' *ngIf = 'loginService.userLog || loginService.adminLog' mat-raised-button color = 'warn' (click) = 'loginService.logout()'> Logout </button>
+        </div>
+    </div>
+    <div class = 'category'>
+        <a routerLink = 'action' style="background-image: url(https://avatars.mds.yandex.net/get-mpic/1545401/img_id218157637869982016.jpeg/orig);">
+            <h1> Action </h1>
+        </a>
+        <a routerLink = 'fantastic' style="background-image: url(https://i2.mybook.io/c/224x360/book_covers/1a/c6/1ac686a9-0fa8-4e72-a70a-77e858117761.jpe?v2);">
+            <h1> Fantastic </h1>
+        </a>
+        <a routerLink = 'kazliterature' style="background-image: url(https://cv02.twirpx.net/3134/3134909.jpg?t=20200523204250);">
+            <h1> Kazakh literature </h1>
+        </a>
+        <a routerLink = 'rusliterature' style="background-image: url(https://deti.spb.ru/images/1010741419.jpg);">
+            <h1> Russian literature </h1>
+        </a>
+        <a routerLink = 'romance' style="background-image: url(https://cdn.eksmo.ru/v2/ITD000000001070688/COVER/cover1__w220.jpg);">
+            <h1> Romance </h1>
+        </a>
+    </div>
+</mat-drawer-container>

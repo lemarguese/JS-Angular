@@ -1,0 +1,43 @@
+<mat-drawer-container class="wrapper">
+    <mat-drawer #drawer mode="over" class = "sidenav">
+        <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+        <h1>Book.kz</h1>
+        <a routerLink = '/main'><mat-icon>home</mat-icon> <p> Main </p></a>
+        <a routerLink = '/profile'><mat-icon>supervised_user_circle</mat-icon> <p> Profile </p></a>
+        <a routerLink = '/cart'><mat-icon>shopping_cart</mat-icon> <p> Cart </p></a>
+        <a routerLink = '/about'><mat-icon>info</mat-icon> <p> About us </p></a>
+        <div id = 'copyright'><h1>Copyright, Book.kz, 2020. </h1></div>
+    </mat-drawer>
+    <div>
+        <div class="layout">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                <mat-icon>subject</mat-icon>
+            </button>
+            <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+            <h1> Books of {{ category }} | Book.kz </h1>
+            <button class = 'logout' *ngIf = 'loginService.userLog || loginService.adminLog' mat-raised-button color = 'warn' (click) = 'loginService.logout()'> Logout </button>
+        </div>
+    </div>
+    <div id = 'filter'>
+        <div></div>
+    </div>
+    <div class = 'books'>
+        <div *ngFor = 'let book of books' id = 'card'>
+            <div>
+                <img [src] = book.url>
+                <div>
+                    <h1> {{ book.title }} </h1>
+                    <mat-divider></mat-divider>
+                    <p> {{ book.content }} </p>
+                    <mat-divider></mat-divider>
+                    <p> <mat-icon>attach_money</mat-icon> {{ book.price }} </p>
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+            <div id = 'cart'>
+                <mat-icon>add_shopping_cart</mat-icon>
+                <button mat-raised-button color = 'primary' (click) = 'addToCart()'> Add to cart </button>
+            </div>
+        </div>
+    </div>
+</mat-drawer-container>

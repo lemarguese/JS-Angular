@@ -1,0 +1,33 @@
+<mat-drawer-container class="wrapper">
+    <mat-drawer #drawer mode="over" class = "sidenav">
+        <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+        <h1>Book.kz</h1>
+        <a routerLink = 'books'><mat-icon>book</mat-icon> <p> Books </p></a>
+        <a routerLink = '/profile'><mat-icon>supervised_user_circle</mat-icon> <p> Profile </p></a>
+        <a routerLink = '/cart'><mat-icon>shopping_cart</mat-icon> <p> Cart </p></a>
+        <a routerLink = '/about'><mat-icon>info</mat-icon> <p> About us </p></a>
+        <div id = 'copyright'><h1>Copyright, Book.kz, 2020. </h1></div>
+    </mat-drawer>
+    <div>
+        <div class="layout">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                <mat-icon>subject</mat-icon>
+            </button>
+            <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+            <h1> Main | Book.kz </h1>
+            <button class = 'logout' *ngIf = 'loginService.userLog || loginService.adminLog' mat-raised-button color = 'warn' (click) = 'loginService.logout()'> Logout </button>
+        </div>
+    </div>
+    <div id = 'background'>
+        <div id = 'first'>
+            <p> Apparently, the practice of reading books creates cognitive 
+                engagement that improves lots of things, including vocabulary,
+                thinking skills, and concentration.
+            </p>
+        </div>
+        <div id = 'second'>
+            <h1> Read. Imagine. Inspire. </h1>
+            <button mat-raised-button color = "primary" (click) = 'getStarted()'> Get started </button>
+        </div>
+    </div>
+</mat-drawer-container>

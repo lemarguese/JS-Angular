@@ -1,0 +1,56 @@
+<mat-drawer-container class="wrapper">
+    <mat-drawer #drawer mode="over" class = "sidenav">
+        <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+        <h1>Book.kz</h1>
+        <a routerLink = '/main/books'><mat-icon>book</mat-icon> <p> Books </p></a>
+        <a routerLink = '/main'><mat-icon>home</mat-icon> <p> Main </p></a>
+        <a routerLink = '/cart'><mat-icon>shopping_cart</mat-icon> <p> Cart </p></a>
+        <a routerLink = '/about'><mat-icon>info</mat-icon> <p> About us </p></a>
+        <div id = 'copyright'><h1>Copyright, Book.kz, 2020. </h1></div>
+    </mat-drawer>
+    <div>
+        <div class="layout">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                <mat-icon>subject</mat-icon>
+            </button>
+            <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
+            <h1> Profile | Book.kz </h1>
+            <button class = 'logout' *ngIf = 'loginService.userLog || loginService.adminLog' mat-raised-button color = 'warn' (click) = 'loginService.logout()'> Logout </button>
+        </div>
+        <div id = 'main'>
+            <div id = 'box'>
+                <div class = 'profilebox'>
+                    <h1> Name: {{ username }} </h1>
+                    <div *ngIf = 'loginService.adminLog'>
+                        <h1> Privileges of admin: lemarguesse </h1>
+                        <input #id placeholder="ID of book">
+                        <input #title placeholder="Title of book">
+                        <input #type placeholder="Type of book">
+                        <button mat-raised-button color = 'warn' (click) = 'delete()'> Delete </button>
+                        <button mat-raised-button color = 'accent'> Update </button>
+                        <button mat-raised-button color = 'primary' (click) = 'create()'> Create </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class = 'social'>
+                <div id = 'facebook'>
+                    <img src = 'https://image.flaticon.com/icons/png/512/124/124010.png'>
+                    <h1> facebook.com/book.kz </h1>
+                </div>
+                <div id = 'twitter'>
+                    <img src = 'https://icon-library.com/images/twitter-png-icon/twitter-png-icon-28.jpg'>
+                    <h1> twitter.com/@bookkz </h1>
+                </div>
+                <div id = 'instagram'>
+                    <img src = 'https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-instagram-icon-logo-by-vexels.png'>
+                    <h1> instagram.com/book_aktobe </h1>
+                </div>
+                <div id = 'youtube'>
+                    <img src = 'https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube-512.png'>
+                    <h1> youtube.com/user/book </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-drawer-container>

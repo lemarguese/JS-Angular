@@ -1,0 +1,186 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.layout {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    flex-direction: row;
+    height: 15%;
+    color: white;
+    opacity: 0.5;
+}
+.layout img {
+    width: 7.5%;
+    height: 100%;
+    flex-shrink: 1;
+    margin-left: 25px;
+}
+.layout h1 {
+    text-align: center;
+    margin-top: 25px;
+    flex-shrink: 1;
+    font-family: 'Segoe UI';
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+.layout p {
+    flex-shrink: 1;
+    margin-top: 25px;
+    font-family: 'Segoe UI';
+    font-size: xx-large;
+    font-weight: bold;
+}
+.sidenav {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba($color: #000000, $alpha: 0.5);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+}
+.sidenav img {
+    width: 30%;
+    margin-left: 100px;
+}
+.sidenav h1 {
+    text-align: center;
+    color: rgb(0, 15, 99);
+    margin-left: 10px;
+    font-size: 2.5vw;
+    font-weight: bolder;
+}
+.sidenav a {
+    margin-top: 5px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 145, 0);
+    height: 15%;
+}
+.sidenav a:hover {
+    background-color: rgb(139, 80, 2);
+    transition: linear 1s;
+    cursor: pointer;
+}
+.sidenav mat-icon {
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 4vw;
+    margin-right: 60px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.sidenav a p {
+    color: rgb(0, 15, 99);
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+.sidenav #copyright {
+    background-color: white;
+    padding-top: 40px;
+    padding-right: 15px;
+}
+.sidenav #copyright h1 {
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 1.25vw;
+    color: rgb(0, 15, 99);
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(https://wallpapercave.com/wp/wp2297884.jpg);
+    height: 39.75vw;
+}
+#main #box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profilebox {
+    display: flex;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+    flex-direction: column;
+    border-radius: 5px;
+    margin: auto;
+    background-color: white;
+    align-items: center;
+    width: 70%;
+    height: 95%;
+}
+.profilebox div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 90%;
+    padding-bottom: 10px;
+    // align-items: center;
+}
+.profilebox div mat-radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.profilebox div input {
+    width: 95%;
+    height: 10%;
+    padding-left: 10px;
+    font-family: 'Segoe UI';
+    font-size: 1vw;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.social div {
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+    height: 20%;
+    transition: all linear 0.5s;
+}
+.social div:hover {
+    background-color: rgb(212, 212, 212);
+    transition: all linear 0.5s;
+}
+.social h1 {
+    margin: auto;
+    font-family: 'Segoe UI';
+    opacity: 1;
+    font-size: 2vw;
+    color: black;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.social img {
+    margin-left: 20px;
+    margin-top: 10px;
+    // border-radius: 50%;
+    width: 17.5%;
+    height: 75%;
+}
+.layout .logout {
+    margin: auto;
+    margin-right: 100px;
+    width: 10%;
+    height: 50%;
+}
