@@ -14,7 +14,7 @@
                 <mat-icon>subject</mat-icon>
             </button>
             <img src = 'https://img.icons8.com/clouds/2x/book-reading.png' alt = "">
-            <h1> Books of {{ category }} | Book.kz </h1>
+            <h1> Book.kz </h1>
             <button class = 'logout' *ngIf = 'loginService.userLog || loginService.adminLog' mat-raised-button color = 'warn' (click) = 'loginService.logout()'> Logout </button>
         </div>
     </div>
@@ -22,7 +22,7 @@
         <div></div>
     </div>
     <div class = 'books'>
-        <a [routerLink] = "book.id" *ngFor = 'let book of books' id = 'card'>
+        <div *ngFor = 'let book of books' id = 'card'>
             <div>
                 <img [src] = book.url>
                 <div>
@@ -35,10 +35,12 @@
             </div>
             <mat-divider></mat-divider>
             <div id = 'cart'>
-                <mat-icon>add_shopping_cart</mat-icon>
-                <button mat-raised-button color = 'primary' (click) = 'addToCart()'> Add to cart </button>
+                <input matInput id = 'otzyv' [formControl] = 'otzyv' placeholder= "Оставить отзыв">
+                <button mat-raised-button color = 'primary' (click) = 'publish()'> Publish </button>
             </div>
-            <!-- <input matInput [formControl] = 'otzyv' placeholder= "Оставить отзыв"> -->
-        </a>
+        </div>
+        <div id = 'otzyvy' *ngFor = 'let otzyv of category.otzyvy'>
+            {{ otzyv }}
+        </div>
     </div>
 </mat-drawer-container>

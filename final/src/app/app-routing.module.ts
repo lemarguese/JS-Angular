@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { ProfileComponent } from './components/profil/profile.component';
 import { RegisterComponent } from './components/register/register.component';
+import { BookitemComponent } from './components/bookitem/bookitem.component';
 
 const routes: Routes = [{
   path: '',
@@ -35,6 +36,12 @@ const routes: Routes = [{
   component: CategoryComponent,
   pathMatch: 'full',
   canActivate: [GuardService]
+},
+{
+  path: 'main/books/:category/:id',
+  component: BookitemComponent,
+  pathMatch: 'full',
+  // canActivate: [GuardService]
 },
 {
   path: 'main',

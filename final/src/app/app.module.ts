@@ -20,6 +20,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { ProfileComponent } from './components/profil/profile.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { CartComponent } from './components/cart/cart.component';
+import { BookitemComponent } from './components/bookitem/bookitem.component';
 
 
 
@@ -32,7 +33,8 @@ import { CartComponent } from './components/cart/cart.component';
     RegisterComponent,
     CategoryComponent,
     ProfileComponent,
-    CartComponent
+    CartComponent,
+    BookitemComponent
   ],
   imports: [
     BrowserModule,

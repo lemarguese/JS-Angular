@@ -47,7 +47,7 @@ export class ProfileComponent implements OnInit, AfterViewInit {
     this.data.filter(p => p.type === this.type.innerHTML);
     localStorage.removeItem('books');
     let id = this.data.length;
-    let category = new Category(id++, this.title.innerHTML, "Good book, i prefer it! It is just template.", 7.99, this.type.innerHTML, "https://cdn.dribbble.com/users/264/screenshots/783787/book-dribbb.jpg");
+    let category = new Category(id++, this.title.innerHTML, "Good book, i prefer it! It is just template.", 7.99, this.type.innerHTML, "https://cdn.dribbble.com/users/264/screenshots/783787/book-dribbb.jpg", null);
     database.push(category);
     this.clear();
     localStorage.setItem('books', JSON.stringify(database));
